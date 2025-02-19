@@ -26,10 +26,11 @@ Crypto dashboard is a modern and visually appealing crypto dashboard that provid
 
 ## 🛠 Installation & Setup
 
-`git clone https://github.com/omidbeheshtian/Crypto-Dashboard.git`
-`cd Crypto-Dashboard`
-`npm install`
-`npm start`
+```bash
+git clone https://github.com/omidbeheshtian/Crypto-Dashboard.git
+cd Crypto-Dashboard
+npm install
+npm start
 
 ## 📄 License
 This project is licensed under the MIT License.
