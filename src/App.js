@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BitcoinChart from "./components/BitcoinChart";
+import BitcoinPrice from "./components/BitcoinPrice";
+import TopDominanceChart from "./components/TopDominanceChart";
+import "./index.css"; // import css files of project
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="dashboard">
+      {/* Bitcoin 1 year Chart get with CoinGecko free API */}
+      <div className="card big-chart">
+        <h2>Bitcoin Yearly Performance</h2>
+        <BitcoinChart />
+      </div>
+
+      {/*  Side Section for BTC live price and Top 5 market Dominance with PIE CHART */}
+      <div className="side-section">
+        <div className="card">
+          <h2>Bitcoin Live Price</h2>
+          <BitcoinPrice />
+        </div>
+
+        <div className="card">
+          <h2>Top 5 Market Dominance</h2>
+          <TopDominanceChart />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
